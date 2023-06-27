@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf - function that produces output according to a format.
+ * _printf - prints anything function
  * @format: the format string printed in the end after processed
  *
  * Return: number of bytes printed
@@ -29,9 +29,9 @@ int _printf(const char *format, ...)
 		}
 		start = p;
 		p++;
-		while (_flag(p, &param))
+		while (_flag(p, &param)) 
 		{
-			p++;
+			p++; 
 		}
 		p = _width(p, &param, ap);
 		p = _precision(p, &param, ap);
@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 			p++;
 		if (!_specifier(p))
 			ret += p_from_to(start, p,
-				param.l_modifier || param.h_modifier ? p - 1 : 0);
+				param.modifier_l || param.modifier_h ? p - 1 : 0);
 		else
 			ret += _print_func(p, ap, &param);
 	}

@@ -100,7 +100,7 @@ int p_percent(va_list ap, params_type *param)
 /**
  * p_S - fuction for custom format specifier
  * @ap: an argument pointer
- * @params: the parameters struct
+ * @param: the parameters struct
  *
  * Return: number chars to be printed
  */

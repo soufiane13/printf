@@ -19,7 +19,7 @@
 #define UNSIGNED_CONVERT	2
 
 /**
- * struct parameters - a new struct for parameters
+ * struct parameters - a new struct for parameters 
  *
  * @unsign: flag if unsigned value
  *
@@ -29,14 +29,13 @@
  * @flag_zero: zero flag specified if exist
  * @flag_minus: minus flag specified if exist
  *
- * @width: the width field if exist
+ * @width: the wilsth field if exist
  * @precision:  precision field if exist
  *
- * @modifier_h: length field specified for h
- * @modifier_l: length field specified for l
+ * @modifier_h: lenght field specified for h
+ * @modifier_l: lenght field specified for l
  *
  */
-
 typedef struct parameters
 {
 	unsigned int unsign			: 1;
@@ -54,7 +53,6 @@ typedef struct parameters
 	unsigned int modifier_l		: 1;
 } params_type;
 
-
 /**
  * struct specifier - Struct hold a function for specifier
  *
@@ -66,9 +64,6 @@ typedef struct specifier
 	char *specifier;
 	int (*f)(va_list, params_type *);
 } specifier_type;
-
-/* _prinf.c file */
-int _printf(const char *format, ...);
 
 /* _put.c file */
 int _puts(char *str);
@@ -117,4 +112,9 @@ void params_init(params_type *param, va_list ap);
 /* string_fields_f.c file */
 char *_precision(char *p, params_type *param, va_list ap);
 
+/* _prinf.c file */
+int _printf(const char *format, ...);
+
 #endif
+
+

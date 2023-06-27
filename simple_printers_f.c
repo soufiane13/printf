@@ -48,7 +48,7 @@ int p_rev(va_list ap, params_type *param)
 /**
  * p_rot13 - function prints string in rot13
  * @ap:a string
- * @params: the parameters struct
+ * @param: the parameters struct
  *
  * Return: number bytes to be printed
  */

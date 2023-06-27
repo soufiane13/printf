@@ -69,7 +69,7 @@ int p_number_right_shift(char *str, params_type *param)
 	unsigned int n = 0, neg, neg2, i = _strlen(str);
 	char pd_char = ' ';
 
-	if (param->zero_flag && !param->flag_minus)
+	if (param->flag_zero && !param->flag_minus)
 		pd_char = '0';
 	neg = neg2 = (!param->unsign && *str == '-');
 	if (neg && i < param->width && pd_char == '0' && !param->flag_minus)
@@ -86,7 +86,7 @@ int p_number_right_shift(char *str, params_type *param)
 	else if (!param->flag_plus && param->flag_space && !neg2 &&
 		!param->unsign && param->flag_zero)
 		n += _putchar(' ');
-	while (i++ < params->width)
+	while (i++ < param->width)
 		n += _putchar(pd_char);
 	if (neg && pd_char == ' ')
 		n += _putchar('-');

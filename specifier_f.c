@@ -9,20 +9,20 @@
 int (*_specifier(char *s))(va_list ap, params_type *param)
 {
 	specifier_type specifiers[] = {
-		{"c", print_char},
-		{"d", print_int},
-		{"i", print_int},
-		{"s", print_string},
-		{"%", print_percent},
-		{"b", print_binary},
-		{"o", print_octal},
-		{"u", print_unsigned},
-		{"x", print_hex},
-		{"X", print_HEX},
-		{"p", print_address},
-		{"S", print_S},
-		{"r", print_rev},
-		{"R", print_rot13},
+		{"c", p_char},
+		{"d", p_int},
+		{"i", p_int},
+		{"s", p_string},
+		{"%", p_percent},
+		{"b", p_binary},
+		{"o", p_octal},
+		{"u", p_unsigned},
+		{"x", p_hex},
+		{"X", p_HEX},
+		{"p", p_address},
+		{"S", p_S},
+		{"r", p_rev},
+		{"R", p_rot13},
 		{NULL, NULL}
 	};
 	int i = 0;

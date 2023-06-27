@@ -56,7 +56,7 @@ int p_unsigned(va_list ap, params_type *param)
 	else
 		l = (unsigned int)va_arg(ap, unsigned int);
 	param->unsign = 1;
-	return (print_number(convert(l, 10, UNSIGNED_CONVERT, param), param));
+	return (p_number(convert(l, 10, UNSIGNED_CONVERT, param), param));
 }
 
 
