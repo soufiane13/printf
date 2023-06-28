@@ -19,7 +19,7 @@
 #define UNSIGNED_CONVERT	2
 
 /**
- * struct parameters - a new struct for parameters 
+ * struct parameters - a new struct for parameters
  *
  * @unsign: flag if unsigned value
  *

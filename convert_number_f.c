@@ -33,7 +33,7 @@ int p_hex(va_list ap, params_type *param)
 /**
  * p_HEX - function prints unsigned hex numbers in uppercase
  * @ap: an argument pointer
- * @params: the parameters struct
+ * @param: the parameters struct
  *
  * Return: bytes to be printed
  */

@@ -29,9 +29,9 @@ int _printf(const char *format, ...)
 		}
 		start = p;
 		p++;
-		while (_flag(p, &param)) 
+		while (_flag(p, &param))
 		{
-			p++; 
+			p++;
 		}
 		p = _width(p, &param, ap);
 		p = _precision(p, &param, ap);

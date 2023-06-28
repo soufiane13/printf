@@ -56,7 +56,7 @@ int _print_func(char *s, va_list ap, params_type *param)
 }
 
 /**
- * _flag - functio finds the flag 
+ * _flag - functio finds the flag
  * @s: the format string
  * @param: the parameters struct
  *
@@ -88,7 +88,7 @@ int _flag(char *s, params_type *param)
 }
 
 /**
- * _modifier - function finds the modifier 
+ * _modifier - function finds the modifier
  * @s: the format string
  * @param: the parameters struct
  *
