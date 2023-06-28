@@ -29,7 +29,7 @@ char *convert(long int num, int b, int flags, params_type *param)
 	*p = '\0';
 
 	do	{
-		*--p = ary[n % base];
+		*--p = ary[n % b];
 		n /= b;
 	} while (n != 0);
 

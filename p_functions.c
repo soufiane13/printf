@@ -71,7 +71,7 @@ int p_string(va_list ap, params_type *param)
 			ret += _puts(str);
 	}
 	while (j++ < param->width)
-		ret += _putchar(pad_char);
+		ret += _putchar(pd_char);
 	if (!param->flag_minus)
 	{
 		if (param->precision != UINT_MAX)
